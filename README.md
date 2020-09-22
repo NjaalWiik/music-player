@@ -19,10 +19,10 @@ Here's a blank template to get started:
     <img src="img/logo.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">TITLE</h3>
+  <h3 align="center">Music Player</h3>
 
   <p align="center">
-    DESCRIPTION
+    Front end project. Created a modern music player.
     <br />
     <a href="https://njaalwiik.github.io/music-player"><strong>View Demo »</strong></a>
     <br />
