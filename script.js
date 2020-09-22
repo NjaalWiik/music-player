@@ -107,7 +107,22 @@ function updateProgressBar(e) {
     if (durationSeconds) {
       durationEl.textContent = `${durationMinutes}:${durationSeconds}`;
     }
+    // Calculate display for currentTime
+    const currentMinutes = Math.floor(currentTime / 60);
+    let currentSeconds = Math.floor(currentTime % 60);
+    if (currentSeconds < 10) {
+      currentSeconds = `0${currentSeconds}`;
+    }
+    currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`;
   }
+}
+
+// Set Progress Bar
+function setProgressBar(e) {
+  const width = this.clientWidth;
+  const clickX = e.offsetX;
+  const { duration } = music;
+  music.currentTime = (clickX / width) * duration;
 }
 
 // Event Listeners
